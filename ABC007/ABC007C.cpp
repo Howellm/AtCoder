@@ -4,8 +4,12 @@ using namespace std;
 
 // -1: 壁  0: 可動域  1: スタート地点  2: 目的地
 
-void BFS(){
-
+void BFS(int maze [][], int i, int j){
+    for(int k = 0; k < 4; k++){
+        if(maze[i][j] == 0){
+            // 幅優先探索法
+        }
+    }
 }
 
 int main(){
