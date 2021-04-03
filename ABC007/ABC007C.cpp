@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
+/* vector宣言 */
 using Graph = vector<vector<vector<int> > >;
 
 // -1: 壁  0: 可動域  1: スタート地点  2: 目的地
-
 
 int main(){
     // 宣言
