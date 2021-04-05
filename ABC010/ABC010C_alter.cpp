@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int distance(int X, int Y, int tx, int ty){
+double distance(int X, int Y, int tx, int ty){
     int root = (X - tx) * (X - tx) + (Y - ty) * (Y - ty);
     return sqrt(root);
 }
