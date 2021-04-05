@@ -2,7 +2,7 @@
 using namespace std;
 int house[1024][2];
 
-int distance(int X, int Y, int tx, int ty){
+double distance(int X, int Y, int tx, int ty){
     int root = pow(X - tx, 2) + pow(Y - ty, 2);
     return sqrt(root);
 }
