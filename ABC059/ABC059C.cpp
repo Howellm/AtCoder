@@ -2,7 +2,8 @@
 using namespace std;
 
 int main(){
-    int n, res_1 = 0, res_2 = 0, sum = 0;
+    int n;
+    long long sum = 0, res_1 = 0, res_2 = 0;
     cin >> n;
     int a[n];
     for(int i = 0; i < n; i++){
