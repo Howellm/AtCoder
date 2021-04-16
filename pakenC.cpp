@@ -1,16 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int bubble(vector<vector<int> > stu, int base, int N){
-  int Max = stu[0][base];
-  for(int i = 0; i < N; i++){
-    for(int j = 0; j < M; j++){
-      
-    }
-    Max = max(Max,stu[i][base]);
-  }
-  return Max;
-}
 
 int main(){
   int N,M;
@@ -21,10 +11,17 @@ int main(){
       cin >> stu[i][j];
     }
   }
-  int sum[M];
-  for(int i = 0; i < M; i++){
-    sum[i] += bubble(stu,i,N);
+  long long sum = 0;
+  for(int i = 0; i < M - 1; i++){
+    for(int j = i + 1; j < M; j++){
+      long long points = 0;
+      for(int k = 0; k < N; k++){
+        int val_a = stu[k][i];
+        int val_b = stu[k][j];
+        points += max(val_a,val_b);
+      }
+      if(points > sum) sum = points;
+    }
   }
-  sort(sum,sum + M);
-  cout << sum[M - 1] + sum[M - 2] << endl;
+  cout << sum << endl;
 }
