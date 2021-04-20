@@ -3,8 +3,8 @@ using namespace std;
 
 int main(){
   int N;
-  vector<long long> A(N + 5,0), B(N + 5,0);
   cin >> N;
+  vector<long long> A(N + 5,0), B(N + 5,0);
   for(int i = 0; i < N + 1; i++) cin >> A[i];
   for(int i = 0; i < N; i++) cin >> B[i];
 
