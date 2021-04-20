@@ -15,11 +15,6 @@ int main(){
     }else{
       sum += min(B[i], A[i] + A[i + 1]);
       A[i + 1] = A[i + 1] > (B[i] - A[i]) ? A[i + 1] - (B[i] - A[i]) : 0;
-      // if(A[i+1] >= B[i] - A[i]){
-      //   A[i + 1] -= (B[i] - A[i]);
-      // }else{
-      //   A[i + 1] = 0;
-      // }
     }
   }
   cout << sum << endl;
